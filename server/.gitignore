@@ -1,0 +1,12 @@
+/__pycache__
+
+/Firebase/secret/
+/Firebase/__pycache__
+
+/PRAW/secret/
+/PRAW/__pycache__
+
+/Pushshift/__pycache__
+
+/routes/__pycache__
+
