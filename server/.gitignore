@@ -3,7 +3,7 @@
 /Firebase/secret/
 /Firebase/__pycache__
 
-/PRAW/secret/
+/PRAW/secret/__pycache__
 /PRAW/__pycache__
 
 /Pushshift/__pycache__
