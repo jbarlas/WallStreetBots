@@ -6,12 +6,16 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello():
-    return 'Hello, World!'
+def test():
+    return 'Flask server running!'
 
 @app.route('/add-submissions')
 def submissions():
     return add_submissions(), 200
+
+@app.route('/submission-history')
+def gather_submission_history():
+    pass
 
 @app.route('/update-comments')
 def update_comments():
