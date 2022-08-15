@@ -11,14 +11,14 @@ def test():
 
 @app.route('/add-submissions/<day-utc>')
 def submissions_by_day(day_utc):
-    """
-    Gather top submissions for 24hr after given utc in unix format
-        Returns: 
-            {
-                data: Submission[],
-                next_utc: number # utc for following day
-            }
-    """
+    # """
+    # Gather top submissions for 24hr after given utc in unix format
+    #     Returns: 
+    #         {
+    #             data: Submission[],
+    #             next_utc: number # utc for following day
+    #         }
+    # """
     return add_submissions_by_day(day_utc), 200
 
 @app.route('/recent-submission')
