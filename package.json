@@ -1,0 +1,20 @@
+{
+  "name": "wallstreetbots",
+  "version": "1.0.0",
+  "description": "Sentiment analysis bot for r/WallStreetBets",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd client && npm run start",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbarlas/WallStreetBots.git"
+  },
+  "author": "Justin Barlas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbarlas/WallStreetBots/issues"
+  },
+  "homepage": "https://github.com/jbarlas/WallStreetBots#readme"
+}

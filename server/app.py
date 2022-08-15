@@ -1,5 +1,5 @@
-from flask import Flask
-from routes.submissions import add_submissions
+from flask import Flask, jsonify
+from routes.submissions import add_submissions_by_day, submission_history, recent_submission
 from PRAW.praw_utils import comment_stream
 
 app = Flask(__name__)
@@ -9,13 +9,25 @@ app = Flask(__name__)
 def test():
     return 'Flask server running!'
 
-@app.route('/add-submissions')
-def submissions():
-    return add_submissions(), 200
+@app.route('/add-submissions/<day-utc>')
+def submissions_by_day(day_utc):
+    """
+    Gather top submissions for 24hr after given utc in unix format
+        Returns: 
+            {
+                data: Submission[],
+                next_utc: number # utc for following day
+            }
+    """
+    return add_submissions_by_day(day_utc), 200
+
+@app.route('/recent-submission')
+def recent():
+    return recent_submission(), 200
 
 @app.route('/submission-history')
 def gather_submission_history():
-    pass
+    return jsonify(submission_history()), 200
 
 @app.route('/update-comments')
 def update_comments():

@@ -1,6 +1,5 @@
 # Server
 ## Setup
-
 ### Installation
 #### Virtual Environemnt
 Install the virtual environment using:
@@ -28,4 +27,13 @@ reddit_authorized = praw.Reddit(client_id="",       # your client id
                                 user_agent="",      # your user agent
                                 username="",        # your reddit username
                                 password="")        # your reddit password
+```
+## `.env`
+Ensure that there is a file `server/.env` which contains the following information:
+```
+# PRAW
+client_secret=<client-secret-value>
+
+# Firebase
+firebase-config=<firebase-config-as-single-line-json>
 ```
