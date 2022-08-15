@@ -16,7 +16,7 @@ git subtree push --prefix client heroku-client master
 ```
 ### To view deployment logs:
 ```
-heroku logs --tail --app my-app
+heroku logs --tail --remote <branch-name>
 ```
 ### To delete a branch:
 ```
