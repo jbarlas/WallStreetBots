@@ -1,7 +1,5 @@
 import requests
-
 from enum import Enum
-
 
 START_DATE = 1577854800 # January 1 2020
 
