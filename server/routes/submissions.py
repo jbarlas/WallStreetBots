@@ -26,6 +26,3 @@ def submission_history():
 
 def recent_submission():
     return get_recent_submission()
-
-if __name__ == "__main__":
-    add_submissions_by_day(1629013962)

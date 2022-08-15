@@ -1,4 +1,4 @@
-from .secret.praw_secret import reddit
+from PRAW.secret.praw_secret import reddit
 from Firebase.models import FirebaseSubmission
 from Firebase.firebase import comments
 
