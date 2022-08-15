@@ -4,8 +4,8 @@
   "description": "Sentiment analysis bot for r/WallStreetBets",
   "main": "index.js",
   "scripts": {
-    "start": "cd client && npm run start",
-    "build": "cd client && npm run build"
+    "start": "cd client && react-scripts start",
+    "build": "cd client && react-scripts build"
   },
   "engines": {
     "node": "14.x"
