@@ -1,7 +1,3 @@
 /__pycache__
-
-/secret
-
-/routes/__pycache__
-
+/secret/__pycache__
 .env
