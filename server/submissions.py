@@ -1,8 +1,8 @@
 """Logic for adding submissions to firebase"""
 
-from Pushshift.pushshift_utils import Pushshift, PushshiftUrl
-from PRAW.praw_utils import get_submission_by_id
-from Firebase.firebase_utils import add_submission, all_submissions, get_recent_submission
+from pushshift_utils import Pushshift, PushshiftUrl
+from praw_utils import get_submission_by_id
+from firebase_utils import add_submission, all_submissions, get_recent_submission
 
 def add_submissions_by_day(time, subreddit="wallstreetbets", size=100):
     push = Pushshift(PushshiftUrl.SUBMISSION)

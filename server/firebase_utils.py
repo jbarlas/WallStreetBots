@@ -15,5 +15,6 @@ def all_submissions():
         to_return.append(submission.to_dict())
     return to_return
 
-def get_recent_submission():
-    return submissions.orderBy('created_utc', direction=firestore.Query.DESCENDING).limit(1)
+def get_recent_submission(num_submissions=1):
+    subs = submissions.order_by('created_utc', direction=firestore.Query.DESCENDING).limit(num_submissions).get()
+    return [s.to_dict() for s in subs]

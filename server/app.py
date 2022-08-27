@@ -11,7 +11,7 @@ CORS(app)
 def test():
     return 'Flask server running!'
 
-@app.route('/add-submissions/<day-utc>')
+@app.route('/add-submissions/<day_utc>')
 def submissions_by_day(day_utc):
     """
     Gather top submissions for 24hr after given utc in unix format
@@ -21,11 +21,11 @@ def submissions_by_day(day_utc):
                 next_utc: number # utc for following day
             }
     """
-    return add_submissions_by_day(day_utc), 200
+    return add_submissions_by_day(int(day_utc)), 200
 
 @app.route('/recent-submission')
 def recent():
-    return recent_submission(), 200
+    return jsonify(recent_submission()), 200
 
 @app.route('/submission-history')
 def gather_submission_history():
