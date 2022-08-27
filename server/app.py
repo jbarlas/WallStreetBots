@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
-from routes.submissions import add_submissions_by_day, submission_history, recent_submission
-from PRAW.praw_utils import comment_stream
+from submissions import add_submissions_by_day, submission_history, recent_submission
+from praw_utils import comment_stream
 
 app = Flask(__name__)
 CORS(app)

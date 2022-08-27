@@ -1,6 +1,6 @@
-from PRAW.secret.praw_secret import reddit
-from Firebase.models import FirebaseSubmission
-from Firebase.firebase import comments
+from secret.praw_secret import reddit
+from models import FirebaseSubmission
+from firebase import comments
 
 wsb = reddit.subreddit('wallstreetbets')
 

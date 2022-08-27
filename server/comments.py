@@ -1,6 +1,6 @@
 """Logic for generating comment data"""
 
-from Firebase.firebase import comments
+from firebase import comments
 from datetime import datetime, timedelta
 
 def get_comments():

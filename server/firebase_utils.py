@@ -1,5 +1,5 @@
-from Firebase.firebase import submissions, comments
-from Firebase.models import FirebaseSubmission, FirebaseComment
+from firebase import submissions, comments
+from models import FirebaseSubmission, FirebaseComment
 from firebase_admin import firestore
 
 def add_submission(submission : FirebaseSubmission):
