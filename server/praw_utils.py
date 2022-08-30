@@ -25,3 +25,10 @@ def comment_stream():
 def get_submission_by_id(id):
     return FirebaseSubmission(reddit.submission(id))
 
+def get_submission_by_list(ids):
+    """
+    Takes in a list of submission ids and returns a list of FirebaseSubmission 
+    """
+    return [FirebaseSubmission(submission) for submission in reddit.info(["t3_" + id for id in ids])]
+
+
