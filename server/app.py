@@ -36,5 +36,9 @@ def update_comments():
     comment_stream()
     return {'status': 'success'}, 200
 
+@app.route('get-submission/<id>')
+def get_submission(id):
+    return get
+
 if __name__ == '__main__':
     app.run(debug=True)

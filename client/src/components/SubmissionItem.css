@@ -1,0 +1,11 @@
+.submission-container {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+}

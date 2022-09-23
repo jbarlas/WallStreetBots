@@ -1,0 +1,17 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ECECEC 
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 10px;
+    background: #FFFFFF;
+}
+
+.nav > a {
+    text-decoration: none;
+}
