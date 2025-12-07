@@ -15,11 +15,18 @@ def test():
 def submissions_by_day(day_utc):
     """
     Gather top submissions for 24hr after given utc in unix format
-        Returns: 
-            {
-                data: Submission[],
-                next_utc: number # utc for following day
-            }
+
+    Parameters:
+    -----------
+    day_utc: str;
+        start time in utc (read as str, cast as int)
+
+    Returns: 
+    -------
+    {
+        data: Submission[],
+        next_utc: number # utc for following day
+    }
     """
     return add_submissions_by_day(int(day_utc)), 200
 
@@ -36,9 +43,9 @@ def update_comments():
     comment_stream()
     return {'status': 'success'}, 200
 
-@app.route('get-submission/<id>')
+@app.route('/get-submission/<id>')
 def get_submission(id):
-    return get
+    pass
 
 if __name__ == '__main__':
     app.run(debug=True)
